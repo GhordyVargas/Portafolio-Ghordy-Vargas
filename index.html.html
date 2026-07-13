@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghordy Vargas | Portfolio Notion Style</title>
+  <meta name="description" content="Portfolio tipo Notion de Ghordy Vargas, Junior QA Engineer con experiencia en testing manual, API y automatización básica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root,[data-theme="light"]{
+      --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);--text-sm:clamp(.875rem,.8rem + .35vw,1rem);--text-base:clamp(1rem,.95rem + .25vw,1.06rem);--text-lg:clamp(1.125rem,1rem + .75vw,1.45rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.15rem);--text-2xl:clamp(2rem,1.2rem + 2.5vw,3.3rem);--text-3xl:clamp(2.4rem,1rem + 4vw,4.8rem);
+      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;--space-20:5rem;
+      --color-bg:#f7f6f3;--color-surface:#ffffff;--color-surface-2:#f2f0eb;--color-border:rgba(32,29,24,.12);--color-text:#1f1e1a;--color-text-muted:#666159;--color-text-faint:#938d82;--color-primary:#0e7769;--color-primary-2:#2251cc;--color-highlight:#eaf5f3;
+      --radius-sm:.45rem;--radius-md:.8rem;--radius-lg:1.05rem;--radius-xl:1.4rem;--radius-full:999px;--shadow-sm:0 1px 2px rgba(0,0,0,.04);--shadow-md:0 8px 24px rgba(0,0,0,.06);
+      --font-body:'Inter',sans-serif;--font-display:'Libre Baskerville',serif;
+    }
+    [data-theme="dark"]{
+      --color-bg:#141311;--color-surface:#1a1917;--color-surface-2:#23211e;--color-border:rgba(240,236,230,.1);--color-text:#f2efe8;--color-text-muted:#c0b8ab;--color-text-faint:#8c857b;--color-primary:#67c7b8;--color-primary-2:#81a1ff;--color-highlight:rgba(103,199,184,.12);--shadow-sm:0 1px 2px rgba(0,0,0,.2);--shadow-md:0 10px 28px rgba(0,0,0,.24);
+    }
+    *,*::before,*::after{box-sizing:border-box} html{scroll-behavior:smooth} body,h1,h2,h3,p,ul{margin:0} body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.7;background:var(--color-bg);color:var(--color-text)}
+    a{color:inherit;text-decoration:none} img,svg{display:block;max-width:100%;height:auto} button{font:inherit;background:none;border:none;cursor:pointer}
+    .container{width:min(980px,calc(100% - 1.5rem));margin-inline:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--color-primary);color:#081311;padding:.8rem 1rem;border-radius:999px}
+    .topbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--color-bg) 85%, transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border)}
+    .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}.brand{display:flex;align-items:center;gap:.85rem;font-weight:700}.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--color-surface-2);border:1px solid var(--color-border);display:grid;place-items:center}
+    .nav-links{display:flex;gap:1rem;flex-wrap:wrap;font-size:var(--text-sm);color:var(--color-text-muted)}.top-actions{display:flex;gap:.6rem}
+    .chip-btn{min-height:44px;padding:.7rem .95rem;border:1px solid var(--color-border);border-radius:999px;background:var(--color-surface)}
+    .page{padding:clamp(2rem,4vw,3rem) 0 var(--space-16)}
+    .hero-card,.section-card,.db-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    .hero-card{padding:clamp(1.35rem,3vw,2.2rem)}
+    .crumb{font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-4)}
+    .page-title{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1.08;letter-spacing:-.03em;max-width:11ch}
+    .subtitle{margin-top:var(--space-4);color:var(--color-text-muted);max-width:66ch}
+    .hero-meta{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-5);margin-top:var(--space-6)}
+    .profile-box{padding:var(--space-5);border-radius:var(--radius-lg);background:var(--color-surface-2);border:1px solid var(--color-border)}
+    .avatar{width:76px;height:76px;border-radius:22px;background:linear-gradient(135deg,var(--color-highlight),transparent),var(--color-surface);border:1px solid var(--color-border);display:grid;place-items:center;font-size:1.5rem;font-weight:800;color:var(--color-primary);margin-bottom:var(--space-4)}
+    .inline-list{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:var(--space-4)}.badge{padding:.42rem .7rem;border-radius:999px;border:1px solid var(--color-border);background:var(--color-surface);font-size:var(--text-sm);color:var(--color-text-muted)}
+    .link-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:var(--space-5)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.85rem 1rem;border-radius:999px;border:1px solid var(--color-border);font-weight:600;background:var(--color-surface)}
+    .btn-primary{background:var(--color-text);color:var(--color-bg);border-color:var(--color-text)}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:var(--space-5);margin-top:var(--space-6)}
+    .stack{display:grid;gap:var(--space-5)}.section-card{padding:var(--space-6)}
+    .section-head{display:flex;justify-content:space-between;gap:var(--space-4);align-items:flex-start;margin-bottom:var(--space-4)}
+    .section-head h2{font-size:var(--text-lg)}.section-head p{color:var(--color-text-muted);max-width:52ch}
+    .db-grid{display:grid;gap:var(--space-4)}.db-card{padding:var(--space-5)}
+    .db-top{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}.db-title{font-size:1.06rem;font-weight:700;line-height:1.35}.db-type{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-primary);font-weight:700}
+    .meta-table{display:grid;gap:.8rem}.meta-row{display:grid;grid-template-columns:90px 1fr;gap:1rem;font-size:var(--text-sm)}.meta-row dt{color:var(--color-text-faint)}.meta-row dd{margin:0}
+    .sidebar{position:sticky;top:5.5rem;align-self:start}.sidebar-card{padding:var(--space-5)}
+    .toc{display:grid;gap:.85rem}.toc a{font-size:var(--text-sm);color:var(--color-text-muted)}
+    .list{padding-left:1.1rem}.list li+li{margin-top:.5rem}
+    footer{padding:var(--space-10) 0 var(--space-16);color:var(--color-text-muted)}
+    @media (max-width:900px){.layout,.hero-meta{grid-template-columns:1fr}.sidebar{position:static}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">GV</div>
+        <span>Ghordy Vargas</span>
+      </div>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#overview" data-i18n="navOverview">Overview</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="top-actions">
+        <button class="chip-btn" data-lang-toggle>ES / EN</button>
+        <button class="chip-btn" data-theme-toggle>◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" class="page">
+    <div class="container">
+      <section class="hero-card" id="overview">
+        <div class="crumb" data-i18n="crumb">Welcome to my portfolio</div>
+        <h1 class="page-title" data-i18n="title">Junior QA Engineer | Manual, API & Test Automation</h1>
+        <p class="subtitle" data-i18n="subtitle">I help teams deliver reliable software through structured manual testing, API validation, and the foundations of test automation.</p>
+        <div class="hero-meta">
+          <div class="profile-box">
+            <div class="avatar" aria-hidden="true">GV</div>
+            <h2 style="font-size:var(--text-lg)">Ghordy Vargas</h2>
+            <p style="color:var(--color-text-muted);margin-top:.35rem" data-i18n="location">Remote</p>
+            <div class="inline-list">
+              <span class="badge">Manual Testing</span>
+              <span class="badge">API Testing</span>
+              <span class="badge">Python</span>
+              <span class="badge">Selenium</span>
+            </div>
+            <div class="link-row">
+              <a class="btn btn-primary" href="mailto:ghordyt@gmail.com">Email</a>
+              <a class="btn" href="https://www.linkedin.com/in/ghordy-vargas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="https://drive.google.com/file/d/1la_3iplRUTLMTtlg9ui8lExdN_nhn1Hj/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-i18n="cvBtn">CV Drive</a>
+            </div>
+          </div>
+          <div class="profile-box">
+            <dl class="meta-table">
+              <div class="meta-row"><dt data-i18n="metaRole">Role</dt><dd>Junior QA Engineer</dd></div>
+              <div class="meta-row"><dt data-i18n="metaFocus">Focus</dt><dd data-i18n="focus">Manual testing, API validation, automation foundations</dd></div>
+              <div class="meta-row"><dt data-i18n="metaTools">Tools</dt><dd>Postman, JIRA, GitHub, DevTools, Android Studio, Python</dd></div>
+              <div class="meta-row"><dt>Email</dt><dd><a href="mailto:ghordyt@gmail.com">ghordyt@gmail.com</a></dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <div class="layout">
+        <div class="stack">
+          <section class="section-card" id="about">
+            <div class="section-head">
+              <div>
+                <h2 data-i18n="aboutTitle">About</h2>
+                <p data-i18n="aboutIntro">A clean snapshot of how I approach software quality and testing work.</p>
+              </div>
+            </div>
+            <p data-i18n="aboutText">I have hands-on experience in sprint-based QA projects covering test case design, bug reporting, UI and mobile testing, SQL basic queries, and API testing using tools like Postman, JIRA, GitHub, DevTools, Android Studio, and Python. I am currently developing my automation skills and continue working toward building efficient and maintainable automated testing solutions.</p>
+          </section>
+
+          <section class="section-card" id="projects">
+            <div class="section-head">
+              <div>
+                <h2 data-i18n="projectsTitle">Projects</h2>
+                <p data-i18n="projectsIntro">Presented as a simple knowledge base, similar to a Notion project list.</p>
+              </div>
+            </div>
+            <div class="db-grid">
+              <article class="db-card">
+                <div class="db-top">
+                  <div>
+                    <div class="db-type">API</div>
+                    <h3 class="db-title" data-i18n="p1Title">Sprint de Pruebas de API con REST</h3>
+                  </div>
+                  <a class="btn" href="https://github.com/GhordyVargas/Portfolio-Ghordy-Vargas" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p style="margin-top:1rem;color:var(--color-text-muted)" data-i18n="p1Desc">Proyecto enfocado en validar endpoints, revisar respuestas esperadas, probar casos positivos y negativos, y detectar errores en la lógica del servicio.</p>
+                <div class="inline-list">
+                  <span class="badge">Postman</span><span class="badge">JIRA</span><span class="badge">REST API</span><span class="badge">GitHub</span><span class="badge">Google Sheets</span>
+                </div>
+                <div class="link-row">
+                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1TEYniNz0geUhCTQZTrwqOh5mgB4Rv_X_/edit?usp=sharing&ouid=102150890357562354448&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" data-i18n="sheetBtn">Abrir comprobación</a>
+                </div>
+              </article>
+
+              <article class="db-card">
+                <div class="db-top">
+                  <div>
+                    <div class="db-type">Automation</div>
+                    <h3 class="db-title" data-i18n="p2Title">Automatización de Pruebas Web</h3>
+                  </div>
+                  <a class="btn" href="https://github.com/GhordyVargas?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p style="margin-top:1rem;color:var(--color-text-muted)" data-i18n="p2Desc">Proyecto orientado a la automatización básica de pruebas en una aplicación web, cubriendo flujos principales y validaciones funcionales.</p>
+                <div class="inline-list">
+                  <span class="badge">Python</span><span class="badge">Selenium</span><span class="badge">DevTools</span><span class="badge">PyCharm</span>
+                </div>
+                <div class="link-row">
+                  <a class="btn" href="https://github.com/GhordyVargas/Portfolio-Ghordy-Vargas" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-card" id="experience">
+            <div class="section-head">
+              <div>
+                <h2 data-i18n="experienceTitle">Experience & training</h2>
+              </div>
+            </div>
+            <div class="db-card" style="padding:0;border:none;box-shadow:none;background:transparent">
+              <div class="db-type" data-i18n="expLabel">Training</div>
+              <h3 class="db-title" style="margin-top:.35rem" data-i18n="expTitle">QA Training Program / Software Testing Bootcamp</h3>
+              <p style="margin-top:1rem;color:var(--color-text-muted)" data-i18n="expDesc">Training focused on manual testing, API, mobile, databases, and basic automation.</p>
+            </div>
+          </section>
+
+          <section class="section-card" id="contact">
+            <div class="section-head">
+              <div>
+                <h2 data-i18n="contactTitle">Contact</h2>
+                <p data-i18n="contactIntro">Open to junior QA opportunities and collaborative projects.</p>
+              </div>
+            </div>
+            <div class="link-row">
+              <a class="btn btn-primary" href="mailto:ghordyt@gmail.com">ghordyt@gmail.com</a>
+              <a class="btn" href="https://www.linkedin.com/in/ghordy-vargas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="https://github.com/GhordyVargas?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </section>
+        </div>
+
+        <aside class="sidebar">
+          <div class="section-card sidebar-card">
+            <h2 style="font-size:var(--text-base);margin-bottom:1rem" data-i18n="tocTitle">On this page</h2>
+            <nav class="toc">
+              <a href="#overview" data-i18n="toc1">Overview</a>
+              <a href="#about" data-i18n="toc2">About</a>
+              <a href="#projects" data-i18n="toc3">Projects</a>
+              <a href="#experience" data-i18n="toc4">Experience</a>
+              <a href="#contact" data-i18n="toc5">Contact</a>
+            </nav>
+          </div>
+          <div class="section-card sidebar-card" style="margin-top:1rem">
+            <h2 style="font-size:var(--text-base);margin-bottom:1rem" data-i18n="skillsTitle">Core skills</h2>
+            <ul class="list" style="color:var(--color-text-muted)">
+              <li>Manual Testing</li>
+              <li>API Testing (REST)</li>
+              <li>Bug Reporting</li>
+              <li>UI & Mobile Testing</li>
+              <li>SQL Basic Queries</li>
+              <li>Basic Test Automation</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Ghordy Vargas</div>
+  </footer>
+
+  <script>
+    const copy = {
+      es: {
+        navOverview:'Overview', navProjects:'Proyectos', navExperience:'Experiencia', navContact:'Contacto', crumb:'Welcome to my portfolio',
+        title:'Junior QA Engineer | Manual, API & Test Automation', subtitle:'Ayudo a los equipos a entregar software confiable mediante pruebas manuales estructuradas, validación de APIs y fundamentos de automatización.',
+        location:'Remoto', cvBtn:'CV Drive', metaRole:'Rol', metaFocus:'Enfoque', metaTools:'Herramientas', focus:'Manual testing, validación API y bases de automatización',
+        aboutTitle:'Sobre mí', aboutIntro:'Una vista clara de cómo abordo la calidad del software y el trabajo de testing.', aboutText:'Tengo experiencia práctica en proyectos QA por sprints, cubriendo diseño de casos de prueba, reporte de bugs, pruebas UI y móviles, consultas SQL básicas y testing de APIs usando herramientas como Postman, JIRA, GitHub, DevTools, Android Studio y Python. Actualmente sigo desarrollando mis habilidades de automatización para construir soluciones de prueba más eficientes y mantenibles.',
+        projectsTitle:'Proyectos', projectsIntro:'Presentados como una base de conocimiento simple, similar a una lista de proyectos de Notion.', p1Title:'Sprint de Pruebas de API con REST', p1Desc:'Proyecto enfocado en validar endpoints, revisar respuestas esperadas, probar casos positivos y negativos, y detectar errores en la lógica del servicio.', sheetBtn:'Abrir comprobación', p2Title:'Automatización de Pruebas Web', p2Desc:'Proyecto orientado a la automatización básica de pruebas en una aplicación web, cubriendo flujos principales y validaciones funcionales.',
+        experienceTitle:'Experiencia y formación', expLabel:'Formación', expTitle:'QA Training Program / Software Testing Bootcamp', expDesc:'Formación con enfoque en pruebas manuales, API, móvil, bases de datos y automatización básica.',
+        contactTitle:'Contacto', contactIntro:'Abierto a oportunidades junior en QA y proyectos colaborativos.', tocTitle:'En esta página', toc1:'Overview', toc2:'Sobre mí', toc3:'Proyectos', toc4:'Experiencia', toc5:'Contacto', skillsTitle:'Skills principales'
+      },
+      en: {
+        navOverview:'Overview', navProjects:'Projects', navExperience:'Experience', navContact:'Contact', crumb:'Welcome to my portfolio',
+        title:'Junior QA Engineer | Manual, API & Test Automation', subtitle:'I help teams deliver reliable software through structured manual testing, API validation, and the foundations of test automation.',
+        location:'Remote', cvBtn:'CV Drive', metaRole:'Role', metaFocus:'Focus', metaTools:'Tools', focus:'Manual testing, API validation, and automation foundations',
+        aboutTitle:'About', aboutIntro:'A clear view of how I approach software quality and testing work.', aboutText:'I have hands-on experience in sprint-based QA projects covering test case design, bug reporting, UI and mobile testing, SQL basic queries, and API testing using tools like Postman, JIRA, GitHub, DevTools, Android Studio, and Python. I am currently developing my automation skills to build more efficient and maintainable test solutions.',
+        projectsTitle:'Projects', projectsIntro:'Presented like a simple knowledge base, similar to a Notion project list.', p1Title:'REST API Testing Sprint', p1Desc:'Project focused on validating endpoints, reviewing expected responses, testing positive and negative cases, and identifying logic issues in the service.', sheetBtn:'Open validation sheet', p2Title:'Web Test Automation', p2Desc:'Project focused on basic automation testing in a web application, covering main flows and functional validations.',
+        experienceTitle:'Experience & training', expLabel:'Training', expTitle:'QA Training Program / Software Testing Bootcamp', expDesc:'Training focused on manual testing, API, mobile, databases, and basic automation.',
+        contactTitle:'Contact', contactIntro:'Open to junior QA opportunities and collaborative projects.', tocTitle:'On this page', toc1:'Overview', toc2:'About', toc3:'Projects', toc4:'Experience', toc5:'Contact', skillsTitle:'Core skills'
+      }
+    };
+    let lang='es';
+    document.querySelector('[data-lang-toggle]').addEventListener('click',()=>{lang=lang==='es'?'en':'es';document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=copy[lang][el.dataset.i18n]);});
+    let theme=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',theme);
+    document.querySelector('[data-theme-toggle]').addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',theme);});
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
