@@ -1,6 +1,87 @@
-# Portafolio QA - Ghordy Vargas
+# QA Portfolio - Ghordy Vargas
 
 **Junior QA Automation Tester | Hilversum, Netherlands**
+
+---
+
+## 🎯 Repository Purpose
+
+This repository contains my professional portfolio as a QA Tester in training. Here I demonstrate my skills in:
+
+- **Manual testing** and test case design
+- **Web automation** with Python, Selenium and Playwright
+- **REST API testing**
+- **Bug reporting** and critical QA thinking
+
+Each folder contains final and representative artifacts from my projects, organized by skill area or sprint.
+
+---
+
+## 🚀 Start Here
+
+If you are a recruiter or hiring manager, I recommend navigating in this order:
+
+1. **[Automation Projects](#-main-projects)** - Show my technical capability with code
+2. **[Manual Testing](#-main-projects)** - Demonstrate my QA mindset and attention to detail
+3. **[API Testing](#-main-projects)** - Evidence of backend understanding and validations
+
+Each folder includes a README that explains:
+- ✅ What the folder is and what it contains
+- ✅ What skill each file demonstrates
+- ✅ Why it's important (QA context)
+
+---
+
+## 📁 Main Projects
+
+### 🔧 Web Automation
+
+| Project | Description | Technologies |
+|---------|-------------|-------------|
+| [Automatizacion-de-Pruebas-Web](https://github.com/GhordyVargas/Automatizacion-de-Pruebas-Web) | End-to-end test automation scripts for web application | Python, Selenium |
+| [qa-project-Urban-Grocers-app-es](https://github.com/GhordyVargas/qa-project-Urban-Grocers-app-es) | E-commerce functionality automation (cart, checkout) | Python, Selenium |
+
+### 📋 Manual Testing
+
+| Project | Description | Skills |
+|---------|-------------|--------|
+| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | Test cases and API testing execution | Test design, API testing |
+
+### 🌐 API Testing
+
+| Project | Description | Tools |
+|---------|-------------|-------|
+| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | REST endpoints validation, status codes and responses | Requests, Python |
+
+---
+
+## 💡 QA Mindset
+
+In each project you will find evidence of:
+
+- **Why I tested that**: Risk and priorities context
+- **What risks I attacked**: Focus on critical functionalities for the user
+- **Prioritization decisions**: Criteria based on impact and probability
+
+---
+
+## 📬 Contact
+
+- **GitHub**: [@GhordyVargas](https://github.com/GhordyVargas)
+- **Location**: Hilversum, Noord-Holland, NL
+- **Availability**: Remote or hybrid roles in QA / Test Automation
+
+---
+
+*Last update: August 2026*
+
+---
+
+---
+
+# Portafolio QA - Ghordy Vargas
+
+**Junior QA Automation Tester | Hilversum, Paises Bajos**
 
 ---
 
