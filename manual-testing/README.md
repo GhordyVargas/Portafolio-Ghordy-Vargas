@@ -1,5 +1,50 @@
 # Manual Testing
 
+## What is this?
+This folder contains manual testing artifacts, including test cases, bug reports and testing documentation.
+
+## Product / Functionality under test
+- Various web and API functionalities
+- Test cases designed to validate expected behaviors
+
+## Objective
+Demonstrate ability to design effective test cases, identify bugs and apply critical QA thinking.
+
+## Scope
+**Included:**
+- Test case design with clear steps and expected results
+- Bug reporting with evidence and prioritization
+- Exploratory and regression testing
+
+**Not included:**
+- Test automation (see automation-web folder)
+- Automated API testing (see api-testing folder)
+
+## Artifacts in this folder
+| File | Description | Skill demonstrated |
+|---------|-------------|---------------------|
+| [View full repository](https://github.com/GhordyVargas/api_stand_tests) | Test cases and manual execution | Test design, bug reporting |
+| [View portfolio](https://github.com/GhordyVargas/Portafolio-Ghordy-Vargas) | Main portfolio with navigation | Organization and documentation |
+
+## Key decisions
+- **Prioritized high-impact test cases** covering critical user functionalities
+- **Focused on clear and reproducible steps** to facilitate execution and reporting
+- **Detailed bug documentation** with evidence, steps to reproduce and prioritization
+
+## Results
+- Documented test cases with steps, data and expected results
+- Bugs reported with clear evidence and prioritization
+- Coverage of critical functionalities validated
+
+## What would I improve next?
+- Add more edge case and negative test cases
+- Implement standardized smoke testing checklist
+- Improve traceability between requirements and test cases
+
+---
+
+# Manual Testing
+
 ## ¿Que es esto?
 Esta carpeta contiene artefactos de pruebas manuales, incluyendo casos de prueba, reporte de bugs y documentacion de testing.
 
