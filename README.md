@@ -1,157 +1,108 @@
-# QA Portfolio - Ghordy Vargas
+# Portafolio Ghordy Vargas | Junior QA Engineer
 
-**Junior QA Automation Tester | Hilversum, Netherlands**
-
----
-
-## 🎯 Repository Purpose
-
-This repository contains my professional portfolio as a QA Tester in training. Here I demonstrate my skills in:
-
-- **Manual testing** and test case design
-- **Web automation** with Python, Selenium and Playwright
-- **REST API testing**
-- **Bug reporting** and critical QA thinking
-
-Each folder contains final and representative artifacts from my projects, organized by skill area or sprint.
+**Objetivo profesional:** Junior QA Automation Tester  
+**Enfoque:** Manual Testing, API Testing, Test Automation  
+**UbicaciÃ³n:** Hilversum, NL  
+**Disponibilidad:** Remoto / HÃ©brido
 
 ---
 
-## 🚀 Start Here
+## Â ¿QuÃ© encontrarÃ¡s en este portafolio?
 
-If you are a recruiter or hiring manager, I recommend navigating in this order:
+Este portafolio documenta mi trabajo como tester junior en tres Ã ¡reas principales:
 
-1. **[Automation Projects](#-main-projects)** - Show my technical capability with code
-2. **[Manual Testing](#-main-projects)** - Demonstrate my QA mindset and attention to detail
-3. **[API Testing](#-main-projects)** - Evidence of backend understanding and validations
+1. **Manual Testing** â Casos de prueba, checklists y reportes de bugs.
+2. **API Testing** â ValidaciÃ³n de endpoints REST con Postman.
+3. **Test Automation** â AutomatizaciÃ³n web con Python, Selenium y Playwright.
 
-Each folder includes a README that explains:
-- ✅ What the folder is and what it contains
-- ✅ What skill each file demonstrates
-- ✅ Why it's important (QA context)
-
----
-
-## 📁 Main Projects
-
-### 🔧 Web Automation
-
-| Project | Description | Technologies |
-|---------|-------------|-------------|
-| [Automatizacion-de-Pruebas-Web](https://github.com/GhordyVargas/Automatizacion-de-Pruebas-Web) | End-to-end test automation scripts for web application | Python, Selenium |
-| [qa-project-Urban-Grocers-app-es](https://github.com/GhordyVargas/qa-project-Urban-Grocers-app-es) | E-commerce functionality automation (cart, checkout) | Python, Selenium |
-
-### 📋 Manual Testing
-
-| Project | Description | Skills |
-|---------|-------------|--------|
-| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | Test cases and API testing execution | Test design, API testing |
-
-### 🌐 API Testing
-
-| Project | Description | Tools |
-|---------|-------------|-------|
-| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | REST endpoints validation, status codes and responses | Requests, Python |
+Cada proyecto incluye:
+- Objetivo y alcance de las pruebas.
+- Estrategia y escenarios contemplados.
+- Herramientas utilizadas.
+- Hallazgos y evidencias.
+- Aprendizajes y habilidades demostradas.
 
 ---
 
-## 💡 QA Mindset
+## Proyectos destacados
 
-In each project you will find evidence of:
+### 1. API Testing
 
-- **Why I tested that**: Risk and priorities context
-- **What risks I attacked**: Focus on critical functionalities for the user
-- **Prioritization decisions**: Criteria based on impact and probability
+**Objetivo:** Validar el comportamiento de una API REST comprobando que los endpoints respondieran correctamente ante diferentes escenarios.
 
----
+**Mi participaciÃ³n:** DiseÃ±Ã© y ejecutÃ© pruebas en Postman para validar endpoints, contemplando escenarios positivos, negativos y de borde.
 
-## 📬 Contact
+**Validaciones realizadas:**
+- CÃ³digos de estado HTTP.
+- Estructura y campos de las respuestas.
+- Manejo de datos invÃ¡lidos y errores.
 
-- **GitHub**: [@GhordyVargas](https://github.com/GhordyVargas)
-- **Location**: Hilversum, Noord-Holland, NL
-- **Availability**: Remote or hybrid roles in QA / Test Automation
+**Evidencias:**
+- [ColecciÃ³n de Postman](./api-testing)
+- [DocumentaciÃ³n del proyecto](./api-testing/README.md)
 
----
-
-*Last update: August 2026*
-
----
+**Aprendizaje:** FortalecÃ© mi capacidad para diseÃ±ar escenarios de prueba, validar servicios REST e identificar comportamientos inesperados.
 
 ---
 
-# Portafolio QA - Ghordy Vargas
+### 2. Web Test Automation
 
-**Junior QA Automation Tester | Hilversum, Paises Bajos**
+**Objetivo:** Automatizar escenarios crÃ©ticos de una aplicaciÃ³n web para validar su funcionamiento de manera repetible.
 
----
+**Mi participaciÃ³n:** DiseÃ±Ã© los escenarios, escribÃ© los scripts y organicÃ© la ejecuciÃ³n de las pruebas utilizando Selenium con Python.
 
-## 🎯 Proposito del Repositorio
+**Escenarios automatizados:**
+- Flujo exitoso de inicio de sesiÃ³n.
+- Credenciales invÃ¡lidas.
+- ValidaciÃ³n de campos obligatorios.
 
-Este repositorio contiene mi portafolio profesional como QA Tester en formacion. Aqui demuestro mis habilidades en:
+**Buenas prÃ¡cticas aplicadas:**
+- Selectores estables.
+- Esperas explÃ©citas.
+- ReutilizaciÃ³n de funciones.
 
-- **Pruebas manuales** y diseno de casos de prueba
-- **Automatizacion web** con Python, Selenium y Playwright
-- **Testing de APIs** REST
-- **Reporte de bugs** y pensamiento critico QA
+**Evidencias:**
+- [Repositorio de automatizaciÃ³n](https://github.com/GhordyVargas/Automatizacion-de-Pruebas-Web)
+- [DocumentaciÃ³n del proyecto](./automation-web/README.md)
 
-Cada carpeta contiene artefactos finales y representativos de mis proyectos, organizados por area de habilidad o sprint.
-
----
-
-## 🚀 Empieza Aqui
-
-Si eres reclutador o hiring manager, te recomiendo navegar en este orden:
-
-1. **[Proyectos de Automatizacion](#-proyectos-principales)** - Muestran mi capacidad tecnica con codigo
-2. **[Pruebas Manuales](#-proyectos-principales)** - Demuestran mi mentalidad QA y atencion al detalle
-3. **[Testing de APIs](#-proyectos-principales)** - Evidencian comprension de backend y validaciones
-
-Cada carpeta incluye un README que explica:
-- ✅ Que es la carpeta y que contiene
-- ✅ Que habilidad demuestra cada archivo
-- ✅ Por que es importante (contexto QA)
+**Aprendizaje:** PractiquÃ© la transformaciÃ³n de casos manuales en pruebas automatizadas y la organizaciÃ³n de scripts legibles y reutilizables.
 
 ---
 
-## 📁 Proyectos Principales
+### 3. Manual Testing
 
-### 🔧 Automatizacion Web
+**Objetivo:** Validar funcionalidades clave de una aplicaciÃ³n mediante pruebas manuales sistemÃ¡ticas.
 
-| Proyecto | Descripcion | Tecnologias |
-|----------|-------------|-------------|
-| [Automatizacion-de-Pruebas-Web](https://github.com/GhordyVargas/Automatizacion-de-Pruebas-Web) | Scripts de automatizacion de pruebas end-to-end para aplicacion web | Python, Selenium |
-| [qa-project-Urban-Grocers-app-es](https://github.com/GhordyVargas/qa-project-Urban-Grocers-app-es) | Automatizacion de funcionalidades de e-commerce (carrito, checkout) | Python, Selenium |
+**Mi participaciÃ³n:** DiseÃ±Ã© casos de prueba, ejecutÃ© escenarios y documentÃ© los resultados obtenidos.
 
-### 📋 Pruebas Manuales
+**Ã¡reas probadas:**
+- Flujos principales de la aplicaciÃ³n.
+- ValidaciÃ³n de campos y reglas de negocio.
+- Comportamiento ante datos invÃ¡lidos.
 
-| Proyecto | Descripcion | Habilidades |
-|----------|-------------|-------------|
-| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | Casos de prueba y ejecucion de testing para API | Test design, API testing |
+**Evidencias:**
+- [Casos de prueba](./manual-testing)
+- [DocumentaciÃ³n del proyecto](./manual-testing/README.md)
 
-### 🌐 API Testing
-
-| Proyecto | Descripcion | Herramientas |
-|----------|-------------|-------------|
-| [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests) | Validaciones de endpoints REST, status codes y respuestas | Requests, Python |
+**Aprendizaje:** DesarrollÃ© mi capacidad para diseÃ±ar casos claros, ejecutar pruebas de forma organizada y comunicar hallazgos.
 
 ---
 
-## 💡 Mentalidad QA
+## Herramientas
 
-En cada proyecto encontraras evidencia de:
-
-- **Por que probe eso**: Contexto de riesgos y prioridades
-- **Que riesgos ataque**: Enfoque en funcionalidades criticas para el usuario
-- **Decisiones de priorizacion**: Criterios basados en impacto y probabilidad
-
----
-
-## 📬 Contacto
-
-- **GitHub**: [@GhordyVargas](https://github.com/GhordyVargas)
-- **Ubicacion**: Hilversum, Noord-Holland, NL
-- **Disponibilidad**: Roles remotos o hibridos en QA / Test Automation
+| CategorÃ©a | Herramientas |
+|---|---|
+| **Lenguajes** | Python, HTML |
+| **AutomatizaciÃ³n** | Selenium, Playwright |
+| **API Testing** | Postman |
+| **GestiÃ³n** | JIRA, GitHub |
+| **Navegadores** | Chrome DevTools, Firefox |
+| **Mobile** | Android Studio |
 
 ---
 
-*Ultima actualizacion: Agosto 2026*
+## Contacto
+
+- **GitHub:** [github.com/GhordyVargas](https://github.com/GhordyVargas)
+- **LinkedIn:** [Tu perfil de LinkedIn]
+- **Email:** [tu email]
