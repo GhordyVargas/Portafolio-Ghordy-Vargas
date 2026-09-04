@@ -1,87 +1,48 @@
-# Manual Testing
+## Manual Testing – Proyecto de Pruebas Manuales
 
-## What is this?
-This folder contains manual testing artifacts, including test cases, bug reports and testing documentation.
+### Objetivo
+Validar funcionalidades clave de una aplicaciÃ³n mediante pruebas manuales sistemÃ¡ticas y documentadas.
 
-## Product / Functionality under test
-- Various web and API functionalities
-- Test cases designed to validate expected behaviors
+### Alcance
+Se probaron las siguientes Ã ¡reas:
+- Flujos principales de la aplicaciÃ³n.
+- ValidaciÃ³n de campos y reglas de negocio.
+- Comportamiento ante datos invÃ¡lidos.
+- NavegaciÃ³n y usabilidad bÃ¡sica.
 
-## Objective
-Demonstrate ability to design effective test cases, identify bugs and apply critical QA thinking.
+### Mi participaciÃ³n
+DiseÃ±Ã© casos de prueba, ejecutÃ© escenarios y documentÃ© los resultados obtenidos durante el proceso de testing manual.
 
-## Scope
-**Included:**
-- Test case design with clear steps and expected results
-- Bug reporting with evidence and prioritization
-- Exploratory and regression testing
+### Estrategia de pruebas
+- **Casos positivos:** Flujos esperados con datos vÃ¡lidos.
+- **Casos negativos:** Datos invÃ¡lidos, campos incompletos o incorrectos.
+- **Casos de borde:** Valores lÃ©mite y combinaciones inusuales.
+- **Smoke testing:** ValidaciÃ³n rÃ¡pida de funcionalidades crÃ©ticas.
 
-**Not included:**
-- Test automation (see automation-web folder)
-- Automated API testing (see api-testing folder)
+### Casos ejecutados
+- Pruebas de funcionalidades principales.
+- ValidaciÃ³n de formularios y campos obligatorios.
+- VerificaciÃ³n de mensajes y comportamientos esperados.
+- DocumentaciÃ³n de resultados por cada caso.
 
-## Artifacts in this folder
-| File | Description | Skill demonstrated |
-|---------|-------------|---------------------|
-| [View full repository](https://github.com/GhordyVargas/api_stand_tests) | Test cases and manual execution | Test design, bug reporting |
-| [View portfolio](https://github.com/GhordyVargas/Portafolio-Ghordy-Vargas) | Main portfolio with navigation | Organization and documentation |
+### Herramientas utilizadas
+- **Checklists:** Para garantizar cobertura de pruebas.
+- **Casos de prueba documentados:** Con pasos, datos y resultados esperados.
+- **Reportes de bugs:** Para documentar comportamientos inesperados.
 
-## Key decisions
-- **Prioritized high-impact test cases** covering critical user functionalities
-- **Focused on clear and reproducible steps** to facilitate execution and reporting
-- **Detailed bug documentation** with evidence, steps to reproduce and prioritization
+### Hallazgos
+- Se identificaron y documentaron los comportamientos de la aplicaciÃ³n.
+- Las pruebas confirmaron el funcionamiento esperado en los escenarios principales.
 
-## Results
-- Documented test cases with steps, data and expected results
-- Bugs reported with clear evidence and prioritization
-- Coverage of critical functionalities validated
+### Evidencias
+- Casos de prueba documentados.
+- Checklists de smoke testing.
+- Reportes de bugs (si aplica).
+- Capturas de pantalla de los resultados.
 
-## What would I improve next?
-- Add more edge case and negative test cases
-- Implement standardized smoke testing checklist
-- Improve traceability between requirements and test cases
+### Aprendizaje
+DesarrollÃ© mi capacidad para diseÃ±ar casos claros, ejecutar pruebas de forma organizada y comunicar hallazgos de manera estructurada. Este proyecto fortaleciÃ³ mi entendimiento de cÃ³mo planificar y documentar pruebas manuales de manera profesional.
 
 ---
 
-# Manual Testing
-
-## ¿Que es esto?
-Esta carpeta contiene artefactos de pruebas manuales, incluyendo casos de prueba, reporte de bugs y documentacion de testing.
-
-## Producto / Funcionalidad bajo prueba
-- Diversas funcionalidades web y de API
-- Casos de prueba disenados para validar comportamientos esperados
-
-## Objetivo
-Demostrar capacidad de diseno de casos de prueba efectivos, identificacion de bugs y pensamiento critico QA.
-
-## Alcance
-**Incluido:**
-- Diseno de casos de prueba con pasos claros y resultados esperados
-- Reporte de bugs con evidencia y priorizacion
-- Testing exploratorio y de regresion
-
-**No incluido:**
-- Automatizacion de pruebas (ver carpeta automation-web)
-- Testing de API automatizado (ver carpeta api-testing)
-
-## Artefactos en esta carpeta
-| Archivo | Descripcion | Habilidad demostrada |
-|---------|-------------|---------------------|
-| [Ver repositorio completo](https://github.com/GhordyVargas/api_stand_tests) | Casos de prueba y ejecucion manual | Test design, bug reporting |
-| [Ver repositorio Portafolio](https://github.com/GhordyVargas/Portafolio-Ghordy-Vargas) | Portafolio principal con navegacion | Organizacion y documentacion |
-
-## Decisiones clave
-- **Priorice casos de prueba de alto impacto** que cubren funcionalidades criticas para el usuario
-- **Enfoque en pasos claros y reproducibles** para facilitar la ejecucion y el reporte
-- **Documentacion detallada de bugs** con evidencia, pasos para reproducir y priorizacion
-
-## Resultados
-- Casos de prueba documentados con pasos, datos y resultados esperados
-- Bugs reportados con evidencia clara y priorizacion
-- Cobertura de funcionalidades criticas validada
-
-## ¿Que mejoraria despues?
-- Agregar mas casos de prueba de borde y negativos
-- Implementar checklist de smoke testing estandarizado
-- Mejorar trazabilidad entre requisitos y casos de prueba
+**Repositorio relacionado:** [qa-capstone-ecommerce-fullflow](https://github.com/GhordyVargas/qa-capstone-ecommerce-fullflow)
