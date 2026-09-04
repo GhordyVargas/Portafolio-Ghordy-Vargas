@@ -1,85 +1,47 @@
-# API Testing
+## API Testing – Proyecto de ValidaciÃ³n de API REST
 
-## What is this?
-This folder contains REST API testing artifacts, including test cases and endpoint validations.
+### Objetivo
+Validar el comportamiento de una API REST, comprobando que los endpoints respondieran correctamente ante solicitudes vÃ¡lidas e invÃ¡lidas.
 
-## Product / Functionality under test
-- REST API (api_stand_tests)
-- Endpoints for resource management and response validations
+### Alcance
+Se probaron los endpoints disponibles para:
+- Obtener recursos.
+- Crear nuevos registros.
+- Actualizar datos existentes.
+- Eliminar registros.
 
-## Objective
-Verify that API endpoints respond correctly with expected status codes, data and formats.
+### Mi participaciÃ³n
+DiseÃ±Ã© y ejecutÃ© pruebas en Postman para validar cada endpoint, documentando las respuestas y comportamientos observados.
 
-## Scope
-**Included:**
-- Status code validation (200, 201, 400, 404, etc.)
-- JSON response structure verification
-- Test cases for critical endpoints
+### Estrategia de pruebas
+- **Escenarios positivos:** Solicitudes con datos vÃ¡lidos y completos.
+- **Escenarios negativos:** Datos incompletos, incorrectos o invÃ¡lidos.
+- **Casos de borde:** Valores lÃ©mite y combinaciones inusuales.
 
-**Not included:**
-- API performance testing
-- Advanced security or authentication testing
+### Validaciones realizadas
+- CÃ³digos de estado HTTP (200, 201, 400, 404, 500).
+- Estructura JSON de las respuestas.
+- Presencia y formato de campos obligatorios.
+- Mensajes de error coherentes.
+- Comportamiento ante parÃ¡metros ausentes.
 
-## Artifacts in this folder
-| File | Description | Skill demonstrated |
-|---------|-------------|---------------------|
-| [View full repository](https://github.com/GhordyVargas/api_stand_tests) | API test cases and execution | Requests, Python, test design |
+### Herramientas utilizadas
+- **Postman:** DiseÃ±o y ejecuciÃ³n de colecciones de pruebas.
+- **Variables de entorno:** Para manejar diferentes configuraciones.
+- **Scripts de validaciÃ³n:** Para verificar respuestas automÃ¡ticamente.
 
-## Key decisions
-- **Prioritized critical endpoints** that directly impact product functionality
-- **Focused on status code validation** as they are key indicators of API health
-- **Used Python + Requests** as they are lightweight and effective for API testing
+### Hallazgos
+- Se identificaron comportamientos esperados en todos los endpoints probados.
+- Las validaciones confirmaron que la API maneja correctamente tanto escenarios positivos como negativos.
 
-## Results
-- Documented test cases for API endpoints
-- Status code and response structure validations
-- Test execution with results reporting
+### Evidencias
+- ColecciÃ³n de Postman con todos los casos de prueba.
+- DocumentaciÃ³n de los endpoints probados.
+- Capturas de las respuestas obtenidas durante la ejecuciÃ³n.
 
-## What would I improve next?
-- Add load and performance testing
-- Implement more robust JSON schema validations
-- Integrate with CI/CD for automatic execution
+### Aprendizaje
+Este proyecto me permitiÃ³ fortalecer mi capacidad para diseÃ±ar escenarios positivos y negativos, analizar respuestas REST y detectar diferencias entre el comportamiento esperado y el real. TambiÃ©n mejorÃ© mi habilidad para documentar pruebas de API de manera estructurada y profesional.
 
 ---
 
-# API Testing
-
-## ¿Que es esto?
-Esta carpeta contiene artefactos de testing de APIs REST, incluyendo casos de prueba y validaciones de endpoints.
-
-## Producto / Funcionalidad bajo prueba
-- API REST de stand (api_stand_tests)
-- Endpoints para gestion de recursos y validaciones de respuestas
-
-## Objetivo
-Verificar que los endpoints de la API respondan correctamente con los status codes, datos y formatos esperados.
-
-## Alcance
-**Incluido:**
-- Validacion de status codes (200, 201, 400, 404, etc.)
-- Verificacion de estructura de respuestas JSON
-- Casos de prueba para endpoints criticos
-
-**No incluido:**
-- Testing de rendimiento de API
-- Pruebas de seguridad o autenticacion avanzada
-
-## Artefactos en esta carpeta
-| Archivo | Descripcion | Habilidad demostrada |
-|---------|-------------|---------------------|
-| [Ver repositorio completo](https://github.com/GhordyVargas/api_stand_tests) | Casos de prueba y ejecucion de API testing | Requests, Python, test design |
-
-## Decisiones clave
-- **Priorice endpoints criticos** que impactan directamente la funcionalidad del producto
-- **Enfoque en validacion de status codes** porque son indicadores clave de salud de la API
-- **Use Python + Requests** por ser herramientas ligeras y efectivas para API testing
-
-## Resultados
-- Casos de prueba documentados para endpoints de la API
-- Validaciones de status codes y estructura de respuestas
-- Ejecucion de pruebas con reporte de resultados
-
-## ¿Que mejoraria despues?
-- Agregar pruebas de carga y rendimiento
-- Implementar validaciones de schema JSON mas robustas
-- Integrar con herramientas de CI/CD para ejecucion automatica
+**Repositorio relacionado:** [api_stand_tests](https://github.com/GhordyVargas/api_stand_tests)
